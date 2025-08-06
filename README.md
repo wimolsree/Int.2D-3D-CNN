@@ -5,7 +5,6 @@ The Int.2D-3D-CNN integrates 2D-CNN and 3D-CNN architectures for video violence 
 3. Spatio-temporal feature learning using 3D-CNN: The proposed 3D-CNN performs two primary functions. First, it refines the learning of spatial features at the individual frame level. Second, it captures temporal dependencies by analyzing patterns across consecutive frames. The 3D-CNN architecture comprises a batch normalization layer, a 3D convolution layer, a dropout layer, and a global average pooling layer.
 
 File Detail:
-1. basemodel: for train the dataset with transfer learning before extracted deep feature by using MobileNetV1 and MobileNetV2.
-2. extractfeature: for extract deep feature frame-by-frame using trained MobileNetV1 and MobileNetV2.
-3. fusion feature: for fusion the features extracted from MobileNetV1 and MobileNetV2.
-4. 3d: for train the fused features to classify violent video dataset.
+1. TrainCNNModel.ipynb: for train the dataset with transfer learning before extracted deep feature by using MobileNetV1 and MobileNetV2.
+2. FeatureExtraction.ipynb: for extract deep feature frame-by-frame using trained MobileNetV1 and MobileNetV2. Then fusion the features extracted from MobileNetV1 and MobileNetV2 with concatenate operation.
+3. Train3DCNN.ipynb: for train the fused features to classify violent video dataset.
